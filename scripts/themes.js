@@ -92,6 +92,7 @@ class ThemesDB {
     ThemesDB.#logEntry(72, '2026-01-01', 'handmade-paper', null, ['PT Serif', 'https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap']),
     ThemesDB.#logEntry(73, '2026-01-01', 'handmade-paper', null, ['Livvic', 'https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400;0,700;1,400;1,700&display=swap']),
     ThemesDB.#logEntry(74, '2026-01-01', 'handmade-paper', null, ['Roboto', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap']),
+    ThemesDB.#logEntry(75, '2026-01-01', 'handmade-paper', null, ['Creepster', 'https://fonts.googleapis.com/css2?family=Creepster&display=swap']),
   ];
 
   static #possibleThemes = null;
