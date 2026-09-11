@@ -39,6 +39,17 @@ footer {
 	align-items: center;
 	padding-bottom: 0.5rem;
 }
+.footer-title a, .footer-title a:hover, .footer-title a:visited {
+	color: white;
+	border: none;
+}
+.footer-title a.footer-title-link {
+	border-bottom: 2px solid transparent;
+}
+.footer-title a.footer-title-link:hover {
+	color: white;
+	border-bottom: 2px solid white;
+}
 .footer-grevillea-icon {
 	height: 3rem;
 	width: 3rem;
@@ -90,6 +101,7 @@ footer {
 	flex-flow: row wrap;
 	column-gap: 1.6em;
 	overflow: clip;
+	line-height: 1.7;
 }
 /* add bullets automatically between footer items. based on https://stackoverflow.com/a/31220698 */
 .footer-links > span {
