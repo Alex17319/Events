@@ -64,17 +64,17 @@ const app = Vue.createApp({
   },
   methods: {
     encode(str) {
-      return unibinary.encodeString(str);
+      return '+' + unibinary.encodeString(str);
     },
     async compressAndEncode(str) {
-      return unibinary.encode(await compress(str));
+      return '+' + unibinary.encode(await compress(str));
     },
     decode(str) {
-      try { return unibinary.decodeString(str); }
+      try { return unibinary.decodeString(str?.replace(/^\+/, '')); }
       catch { return null; }
     },
     async decodeAndDecompress(str) {
-      try { return await decompress(unibinary.decode(str)); }
+      try { return await decompress(unibinary.decode(str?.replace(/^\+/, ''))); }
       catch { return null; }
     },
     formatDate(datetime) {
