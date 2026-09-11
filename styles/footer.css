@@ -39,15 +39,20 @@ footer {
 	align-items: center;
 	padding-bottom: 0.5rem;
 }
+.footer-title .footer-title-link {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 1rem;
+	align-items: center;
+}
 .footer-title a, .footer-title a:hover, .footer-title a:visited {
-	color: white;
+	color: inherit;
 	border: none;
 }
-.footer-title a.footer-title-link {
+.footer-title a .footer-title-text {
 	border-bottom: 2px solid transparent;
 }
-.footer-title a.footer-title-link:hover {
-	color: white;
+.footer-title a:hover .footer-title-text {
 	border-bottom: 2px solid white;
 }
 .footer-grevillea-icon {
